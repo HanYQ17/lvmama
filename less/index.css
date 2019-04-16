@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 26.66667vw;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+img {
+  vertical-align: middle;
+}
+.bt {
+  border-top: 1px solid #ddd;
+}
+.br {
+  border-right: 1px solid #ddd;
+}
+.bb {
+  border-bottom: 1px solid #ddd;
+}
+.bl {
+  border-left: 1px solid #ddd;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#header {
+  width: 100%;
+  height: .35rem;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .left {
+  width: .6rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .left a {
+  color: #d3079e;
+}
+#header .center {
+  flex: 1;
+  text-align: center;
+}
+#header .right {
+  width: .4rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .right a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .right a img {
+  height: .23rem;
+}
+.mui-scroll-wrapper {
+  flex: 1;
+  position: relative;
+  height: 100%;
+}
+.mui-scroll-wrapper .mui-scroll #slide {
+  margin-bottom: .03rem;
+}
+.mui-scroll-wrapper .mui-scroll #slide .swiper-container .swiper-wrapper img {
+  width: 100%;
+}
+.mui-scroll-wrapper .mui-scroll #nav {
+  margin-bottom: .03rem;
+}
+.mui-scroll-wrapper .mui-scroll #nav .mui-row > div a {
+  display: block;
+  padding: .02rem;
+}
+.mui-scroll-wrapper .mui-scroll #nav .mui-row > div a img {
+  width: 100%;
+}
+.mui-scroll-wrapper .mui-scroll #smallNav {
+  margin-bottom: .1rem;
+}
+.mui-scroll-wrapper .mui-scroll #smallNav .mui-row > div a {
+  display: block;
+  border: 0.5px solid #ccc;
+}
+.mui-scroll-wrapper .mui-scroll #smallNav .mui-row > div a img {
+  width: 100%;
+}
+.mui-scroll-wrapper .mui-scroll #main #discounts {
+  margin-bottom: .1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mui-scroll-wrapper .mui-scroll #main #discounts .left {
+  flex: 1;
+}
+.mui-scroll-wrapper .mui-scroll #main #discounts .left a {
+  display: block;
+}
+.mui-scroll-wrapper .mui-scroll #main #discounts .left a img {
+  width: 100%;
+}
+.mui-scroll-wrapper .mui-scroll #main #discounts .right {
+  flex: 1;
+}
+.mui-scroll-wrapper .mui-scroll #main #discounts .right a {
+  display: block;
+}
+.mui-scroll-wrapper .mui-scroll #main #discounts .right a img {
+  width: 100%;
+}
+.mui-scroll-wrapper .mui-scroll #main #activity {
+  background-color: #ddd;
+  margin-bottom: .1rem;
+}
+.mui-scroll-wrapper .mui-scroll #main #activity h6 {
+  color: #000;
+  padding: .06rem;
+}
+.mui-scroll-wrapper .mui-scroll #main #activity .mui-row > div a {
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+.mui-scroll-wrapper .mui-scroll #main #activity .mui-row > div a img {
+  width: 100%;
+}
+.mui-scroll-wrapper .mui-scroll #main #hot {
+  background-color: #fff;
+  padding-top: .1rem;
+}
+.mui-scroll-wrapper .mui-scroll #main #hot .title .mui-row > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.mui-scroll-wrapper .mui-scroll #main #hot .title .mui-row > div a {
+  height: 100%;
+  display: block;
+  color: #000;
+  font-size: .14rem;
+  line-height: .14rem;
+}
+.mui-scroll-wrapper .mui-scroll #main #hot .title .mui-row > div a.active {
+  color: #d3079e;
+}
+.mui-scroll-wrapper .mui-scroll #main #hot .title .mui-row > div a.active::after {
+  content: '';
+  width: .6rem;
+  height: .02rem;
+  background-color: #d3079e;
+  margin-bottom: .1rem;
+  position: absolute;
+  left: 34%;
+  top: 136%;
+}
+.mui-scroll-wrapper .mui-scroll #main #hot .bottom .mui-card {
+  margin: 10px 0;
+}
+.mui-scroll-wrapper .mui-scroll #main #hot .bottom .mui-card .mui-card-content .content {
+  padding: 0;
+}
+.mui-scroll-wrapper .mui-scroll #main #hot .bottom .mui-card .mui-card-content .content p {
+  margin-bottom: 0;
+  line-height: 0.18rem;
+}
+.mui-scroll-wrapper .mui-scroll #main #hot .bottom .mui-card .mui-card-content .content p.tit {
+  color: #000;
+}
+.mui-scroll-wrapper .mui-scroll #main #hot .bottom .mui-card .mui-card-content .content p.cent {
+  color: #bbb;
+}
+.mui-scroll-wrapper .mui-scroll #main #more {
+  text-align: center;
+  background-color: #fff;
+}
+.mui-scroll-wrapper .mui-scroll #main #more p {
+  color: #000;
+  line-height: 0.25rem;
+}
+.mui-scroll-wrapper .mui-scroll #main #more p i {
+  margin-left: .2rem;
+}
+#footer {
+  width: 100vw;
+}
+#footer .mui-card {
+  background-color: #d3079e;
+  margin: 0;
+}
+#footer .mui-card .mui-card-header .left a {
+  color: #fff;
+}
+#footer .mui-card .mui-card-header .left a:first-child {
+  margin-right: 0.1rem;
+}
+#footer .mui-card .mui-card-header .right a {
+  color: #fff;
+}

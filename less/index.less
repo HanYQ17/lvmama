@@ -1,0 +1,278 @@
+@import 'base.less';
+
+body {
+    width: 100vw;
+    height: 100vh;
+    .dfcc();
+    flex-direction: column;
+}
+
+
+
+// 头部
+#header {
+    width: 100%;
+    height: .35rem;
+    background-color: #f7f7f7;
+    .dfcc();
+
+    .left {
+        width: .6rem;
+        height: 100%;
+        .dfcc();
+
+        a {
+            color: #d3079e;
+        }
+    }
+
+    .center {
+        flex: 1;
+        text-align: center;
+    }
+
+    .right {
+        width: .4rem;
+        height: 100%;
+        .dfcc();
+
+        a {
+            .dfcc();
+
+            img {
+                height: .23rem;
+
+            }
+        }
+    }
+}
+
+
+.mui-scroll-wrapper {
+    flex: 1;
+    position: relative;
+    height: 100%;
+
+    .mui-scroll {
+
+        // 轮播图
+        #slide {
+            margin-bottom: .03rem;
+
+            .swiper-container {
+                .swiper-wrapper {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        //导航
+        #nav {
+            margin-bottom: .03rem;
+
+            .mui-row {
+                >div {
+                    a {
+                        display: block;
+                        padding: .02rem;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        // 小导航
+        #smallNav {
+            margin-bottom: .1rem;
+
+            .mui-row {
+                >div {
+                    a {
+                        display: block;
+                        border: 0.5px solid #ccc;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        // 主体
+        #main {
+
+            // 优惠
+            #discounts {
+                margin-bottom: .1rem;
+                .dfcc();
+
+                .left {
+                    flex: 1;
+
+                    a {
+                        display: block;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .right {
+                    flex: 1;
+
+                    a {
+                        display: block;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            // 热门活动1
+            #activity {
+                background-color: #ddd;
+                margin-bottom: .1rem;
+
+                h6 {
+                    color: #000;
+                    padding: .06rem;
+
+                }
+
+                .mui-row {
+                    >div {
+                        a {
+                            display: block;
+                            border-bottom: 1px solid #ccc;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // 热门活动2
+            #hot {
+                background-color: #fff;
+                padding-top: .1rem;
+
+                .title {
+
+                    .mui-row {
+                        >div {
+                            .dfcc();
+                            position: relative;
+
+                            a {
+                                height: 100%;
+                                display: block;
+                                color: #000;
+                                font-size: .14rem;
+                                line-height: .14rem;
+
+                                &.active {
+                                    color: #d3079e;
+
+                                    &::after {
+                                        content: '';
+                                        width: .6rem;
+                                        height: .02rem;
+                                        background-color: #d3079e;
+                                        margin-bottom: .1rem;
+                                        position: absolute;
+                                        left: 34%;
+                                        top: 136%;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                .bottom {
+                    .mui-card {
+                        margin: 10px 0;
+
+                        .mui-card-content {
+                            .content {
+                                padding: 0;
+
+                                p {
+                                    margin-bottom: 0;
+                                    line-height: 0.18rem;
+
+                                    &.tit {
+                                        color: #000;
+                                    }
+
+                                    &.cent {
+                                        color: #bbb;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            // 查看等多
+            #more {
+                text-align: center;
+                background-color: #fff;
+
+                p {
+                    color: #000;
+                    line-height: 0.25rem;
+
+                    i {
+                        margin-left: .2rem;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+// 底部
+#footer {
+    width: 100vw;
+
+    .mui-card {
+        background-color: #d3079e;
+        margin: 0;
+
+        .mui-card-header {
+            .left {
+                a {
+                    color: #fff;
+
+                    &:first-child {
+                        margin-right: 0.1rem;
+                    }
+                }
+            }
+
+            .right {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
